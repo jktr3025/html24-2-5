@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script/jquery-3.7.1.js"></script>
+    <script lang="java">
+        $(function(){
+            $("ul li").each(function(){
+                var cc = $(this).attr("color");
+                $(this).css({color:cc})
+            })//each
+        })//jquery
+    </script>
+</head>
+<body>
+    <ul>
+        <li color="red" >list1</li>
+        <li color="pink" >list2</li>
+        <li color="olive" >list3</li>
+        <li color="lightblue" >list4</li>
+        <li color="hotpink" >list5</li>
+    </ul>
+</body>
+</html>

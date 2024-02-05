@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script/jquery-3.7.1.js"></script>
+    <!-- <script src="script/parallax.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <style type="text/css">
+        .parallax-window{
+            min-height: 700px;
+            background: transparent;
+        }
+        .height{
+            height: 500px;
+        }
+    </style>
+    <script lang="java">
+        $(function(){
+            $(".parallax-window").each(function(){
+            var bg = $(this).attr("data-img-src");
+            $(this).css({"background-image":bg});
+            console.log(bg);
+            })//each
+        })//query
+    </script>
+</head>
+<body>
+    <div class="height">패러릭스 테스트 01</div>
+    <div class="parallax-window" data-parallax="scroll" data-img-src="img/bg1.jpg"></div>
+    <div class="height">패러릭스 테스트 02</div>
+    <div class="parallax-window" data-parallax="scroll" data-img-src="img/bg2.jpg"></div>
+    <div class="height">패러릭스 테스트 03</div>
+    <div class="parallax-window" data-parallax="scroll" data-img-src="img/bg3.jpg"></div>
+    <div class="height">패러릭스 테스트 04</div>
+    <div class="parallax-window" data-parallax="scroll" data-img-src="img/bg4.jpg"></div>
+    <div class="height">패러릭스 테스트 05</div>
+    <div class="parallax-window" data-parallax="scroll" data-img-src="img/bg5.jpg"></div>
+</body>
+</html>
